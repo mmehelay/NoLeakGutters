@@ -385,37 +385,10 @@ html {
             }
         }
 
-        .cs-top-bar {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      
 
-        .cs-top-container {
-            width: 100%;
-            padding: calc(16 / 16 * 1rem) calc(16 / 16 * 1rem) 0;
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            gap: calc(16 / 16 * 1rem);
-        }
+        
 
-        .cs-top-contact {
-            width: 100%;
-            padding-bottom: calc(16 / 16 * 1rem);
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            border-bottom: 1px solid #e8e8e8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* 16px - 20px */
-            gap: clamp(1rem, 2vw, 1.5rem);
-        }
 
         .cs-top-link {
             font-size: calc(14 / 16 * 1rem);
@@ -518,7 +491,7 @@ html {
 
             img {
                 width: auto;
-                height: 100%;
+                height: 200%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
@@ -1016,6 +989,7 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #f7f7f7;
         }
 
         .cs-top-container {
@@ -1025,7 +999,7 @@ html {
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             gap: calc(50 / 16 * 1rem);
         }
@@ -1139,8 +1113,8 @@ html {
             z-index: 100;
 
             img {
-                width: 100%;
-                height: 100%;
+                width: 150%;
+                height: 150%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
@@ -1303,6 +1277,8 @@ html {
 }
 
                                 
+
+                                
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
@@ -1430,6 +1406,7 @@ html {
             align-items: center;
         }
 
+
         .cs-title {
             margin: 0;
         }
@@ -1453,6 +1430,7 @@ html {
             align-items: flex-start;
             grid-column: span 12;
             gap: calc(4 / 16 * 1rem);
+            margin-bottom: 25px;
         }
 
         .cs-input, .cs-select {
@@ -1527,7 +1505,7 @@ html {
                 &:before {
                     width: 100%;
                 }
-            }
+            } 
         }
 
         .cs-submit {
@@ -1541,6 +1519,7 @@ html {
                 cursor: pointer;
             }
         }
+  
 
         .cs-floater1 {
             /* 157px - 312px */
@@ -1812,5 +1791,7 @@ html {
         }
     }
 }
+
+
 
                                 
