@@ -13,83 +13,55 @@ permalink: 'contact/'
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+ 
 
     <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
 
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
+<section id="contact-1525">
+    <div class="cs-container">
+        <div class="cs-content">
+           <span class="cs-topper">Get In Touch</span>
+            <h2 class="cs-title">SCHEDULE YOUR CONSULTATION</h2>
         </div>
-    </section>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1525" name="Contact Form" method="post">
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-1525" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-1525" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-1525" name="email" placeholder="Email">
+            </label>
+              <label class="cs-label">
+                Service Address
+                <input class="cs-input" required type="text" id="Address-1525" name="Address" placeholder="Address">
+            </label>
+            <label for="" class="cs-label">
+            How Can We Help You?
+                <select class="cs-select" name="Service" id="classes-1525">
+                    <option value="Gutter Installation">Gutter Installation</option>
+                    <option value="Gutter Cleaning">Gutter Cleaning</option>
+                    <option value="Gutter Repair">Gutter Repair</option>
+                    <option value="Gutter Guards">Gutter Guards</option>
+                    <option value="Soffit Installation">Soffit Installation</option>
+                    <option value="Soffit Repair">Soffit Repair</option>
+                </select>
+            </label>
+            <label class="cs-label cs-message">
+                Please Tell Us A Little About Your Project
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1525" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+        </form>
+    </div>
+ 
+</section>
+                                
 {% endblock %}
