@@ -1090,7 +1090,7 @@ html {
             /* prevents padding from affectin gheight */
             box-sizing: border-box;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;;
             align-items: center;
             gap: calc(24 / 16 * 1rem);
             position: relative;
