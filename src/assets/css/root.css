@@ -876,6 +876,10 @@ html {
   #cs-navigation .cs-social-link:hover {
     background-color: var(--secondary);
   }
+  #cs-navigation .cs-nav-button {
+    margin-left: auto;
+    display: block;
+  }
   #cs-navigation .cs-social-icon {
     width: 0.75rem;
     height: auto;
@@ -949,16 +953,6 @@ html {
     font-weight: 700;
     color: var(--headerColor);
   }
-  #cs-navigation .cs-donate {
-    text-decoration: none;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  #cs-navigation .cs-donate:hover .cs-donate-icon {
-    transform: scale(1.1);
-  }
   #cs-navigation .cs-flex {
     display: flex;
     flex-direction: column;
@@ -1019,10 +1013,6 @@ html {
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
   }
-  #cs-navigation .cs-nav-button {
-    padding: 0 3rem;
-    display: none;
-  }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
@@ -1036,12 +1026,22 @@ html {
 }
 /* Larger Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
-  #cs-navigation .cs-donate {
+  #cs-navigation .cs-container {
+    width: 100%;
+    max-width: 107.5rem;
+    margin: auto;
+    padding: 0 1rem;
+    /* prevents padding from affectin gheight */
+    box-sizing: border-box;
     display: flex;
-    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
   }
   #cs-navigation .cs-nav-button {
-    margin: 0;
+    display: flex;
+    margin-left: auto;
   }
 }
 /*-- -------------------------- -->

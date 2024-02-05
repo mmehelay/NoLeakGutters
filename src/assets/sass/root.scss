@@ -1075,6 +1075,11 @@ html {
             }
         }
 
+        .cs-nav-button {
+            margin-left: auto;
+            display: block;
+        }
+
         .cs-social-icon {
             width: calc(12 / 16 * 1rem);
             height: auto;
@@ -1090,7 +1095,7 @@ html {
             /* prevents padding from affectin gheight */
             box-sizing: border-box;
             display: flex;
-            justify-content: space-between;;
+            justify-content: space-between;
             align-items: center;
             gap: calc(24 / 16 * 1rem);
             position: relative;
@@ -1158,19 +1163,7 @@ html {
             }
         }
 
-        .cs-donate {
-            text-decoration: none;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            gap: calc(12 / 16 * 1rem);
-
-            &:hover {
-                .cs-donate-icon {
-                    transform: scale(1.1);
-                }
-            }
-        }
+     
 
         .cs-flex {
             display: flex;
@@ -1241,10 +1234,7 @@ html {
             }
         }
 
-        .cs-nav-button {
-            padding: 0 calc(48 / 16 * 1rem);
-            display: none;
-        }
+     
     }
 }
 
@@ -1265,13 +1255,25 @@ html {
 /* Larger Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
     #cs-navigation {
-        .cs-donate {
+      
+        .cs-container {
+            width: 100%;
+            max-width: calc(1720 / 16 * 1rem);
+            margin: auto;
+            padding: 0 calc(16 / 16 * 1rem);
+            /* prevents padding from affectin gheight */
+            box-sizing: border-box;
             display: flex;
-            margin-left: auto;
+            justify-content: space-between;
+            align-items: center;
+            gap: calc(24 / 16 * 1rem);
+            position: relative;
         }
+       
 
         .cs-nav-button {
-            margin: 0;
+            display: flex;
+            margin-left: auto;
         }
     }
 }
