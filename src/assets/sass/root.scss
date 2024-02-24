@@ -1241,12 +1241,8 @@ html {
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #cs-navigation {
-        .cs-container {
-            justify-content: space-between;
-        }
 
         .cs-nav-button {
-            margin-left: auto;
             display: block;
         }
     }
@@ -1255,25 +1251,11 @@ html {
 /* Larger Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
     #cs-navigation {
-      
-        .cs-container {
-            width: 100%;
-            max-width: calc(1720 / 16 * 1rem);
-            margin: auto;
-            padding: 0 calc(16 / 16 * 1rem);
-            /* prevents padding from affectin gheight */
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: calc(24 / 16 * 1rem);
-            position: relative;
-        }
+    
        
 
         .cs-nav-button {
-            display: flex;
-            margin-left: auto;
+            display: block;
         }
     }
 }
