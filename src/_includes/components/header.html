@@ -40,12 +40,12 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="/" class="cs-li-link">
+                        <a href="/" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug}}">
                             Home
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug}}">
+                        <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug}}">
                             About Us
                         </a>
                     </li>
@@ -84,12 +84,17 @@
                         </ul>
                     </li>
                      <li class="cs-li">
-                        <a href="/projects" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug}}">
+                        <a href="/projects" class="cs-li-link {{ 'cs-active' if 'projects' == page.fileSlug}}">
                             Gallery
                         </a>
                     </li>
+                     <li class="cs-li">
+                        <a href="/reviews" class="cs-li-link {{ 'cs-active' if 'reviews' == page.fileSlug}}">
+                            Reviews
+                        </a>
+                    </li>
                     <li class="cs-li">
-                        <a href="/contact" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug}}">
+                        <a href="/contact" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug}}">
                             Contact
                         </a>
                     </li>

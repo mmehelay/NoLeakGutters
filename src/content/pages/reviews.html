@@ -16,19 +16,27 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+   <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Our Reviews</h1>
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
-
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">Reviews</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="" class="cs-link">Reviews</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Banner.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Banner.png">
+        <img decoding="async" src="/assets/images/Banner.png" alt="mechanic" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
     <!-- ============================================ -->
     <!--                  Reviews                     -->
     <!-- ============================================ -->
@@ -36,9 +44,7 @@ eleventyNavigation:
     <section id="reviews">
         <div class="container">
             <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
+               
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
                 </p>
@@ -50,9 +56,6 @@ eleventyNavigation:
                 </div>
             </div>
             <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
                 </p>
@@ -64,9 +67,7 @@ eleventyNavigation:
                 </div>
             </div>
             <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
+       
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
                 </p>
@@ -78,9 +79,7 @@ eleventyNavigation:
                 </div>
             </div>
             <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
-                </picture>
+
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
                 </p>
@@ -92,9 +91,7 @@ eleventyNavigation:
                 </div>
             </div>
             <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
+          
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
                 </p>
@@ -106,9 +103,7 @@ eleventyNavigation:
                 </div>
             </div>
             <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
+       
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
                 </p>
@@ -119,8 +114,14 @@ eleventyNavigation:
                     </picture>
                 </div>
             </div>
+              <a href="" class="cs-button-1" aria-label="read more about us">Write A Review</a>
         </div>
+         
     </section>
+
+  
+  
+                                
 
     {% include 'components/cta.html' %}
 
