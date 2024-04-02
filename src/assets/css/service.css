@@ -239,7 +239,6 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    order: -1;
   }
   #sbs-418 .cs-info {
     /* 12px - 20px */
@@ -326,6 +325,7 @@
   }
   #sbs-418 .cs-image-group {
     max-width: 41.1875rem;
+    order: -1;
   }
   #sbs-418 .cs-picture {
     /* 269px - 496px changes at desktop */

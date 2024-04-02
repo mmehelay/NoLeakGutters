@@ -276,7 +276,7 @@
             align-items: center;
             position: relative;
             z-index: 1;
-            order: -1;
+       
         }
 
         .cs-info {
@@ -375,6 +375,7 @@
 
         .cs-image-group {
             max-width: calc(659 / 16 * 1rem);
+            order:-1;
         }
 
         .cs-picture {
