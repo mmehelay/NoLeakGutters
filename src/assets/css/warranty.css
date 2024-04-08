@@ -6,7 +6,6 @@
   #content-page-713 {
     padding: var(--sectionPadding);
     padding-top: clamp(7rem, 12vw, 12rem);
-    background-color: #fff;
     /* clips the wave background from causing overflow issues when it goes off screen */
     overflow: hidden;
     position: relative;
