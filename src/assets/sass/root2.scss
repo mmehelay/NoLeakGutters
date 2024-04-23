@@ -1391,6 +1391,19 @@ html {
             /* 68px - 100px */
             column-gap: clamp(4.25rem, calc(8% + 2vw), 6.25rem);
         }
+        .cs-bottom {
+			text-align: center;
+			width: 100%;
+			max-width: calc(1280 / 16 * 1rem);
+			/* 48px - 64px */
+			margin: clamp(3rem, 7vw, 4rem) auto 0;
+			padding-top: calc(24 / 16 * 1rem);
+			border-top: 1px solid #e6e6e6;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: calc(12 / 16 * 1rem);
+		}
 
         .cs-logo-group {
             /* takes up all the space, lets the other ul's wrap below it */
@@ -1536,6 +1549,69 @@ html {
             height: calc(13 / 16 * 1rem);
             width: auto;
             display: block;
+        }
+         .cs-credit,
+		.cs-bottom-link,
+		.cs-credit-link {
+			/* 14px - 16px */
+			font-size: clamp(0.875rem, 1.5vw, 1rem);
+			line-height: 1.5em;
+			text-decoration: none;
+			width: auto;
+			margin: 0;
+			color: var(--bodyTextColor);
+			display: inline-block;
+			position: relative;
+			transition: color 0.3s;
+		}
+
+		.cs-credit {
+			width: 100%;
+		}
+
+		.cs-credit-link {
+			/* 14px - 16px */
+			font-size: clamp(0.875rem, 1.5vw, 1rem);
+			line-height: 1.5em;
+			text-decoration: none;
+			width: auto;
+			margin: 0;
+			color: var(--bodyTextColor);
+			display: inline-block;
+			position: relative;
+
+			&:hover {
+				color: var(--primary);
+			}
+		}
+
+		.cs-bottom-links {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.cs-bottom-link {
+			display: flex;
+			align-items: center;
+
+			&:hover {
+				color: var(--primary);
+			}
+
+			&:last-of-type {
+				&:before {
+					/* separator */
+					content: '';
+					width: 1px;
+					height: calc(14 / 16 * 1rem);
+					margin: 0 calc(12 / 16 * 1rem);
+					background: currentColor;
+					opacity: 1;
+					display: block;
+				}
+			}
         }
     }
 }

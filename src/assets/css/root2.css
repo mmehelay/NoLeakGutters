@@ -1142,6 +1142,19 @@ html {
     /* 68px - 100px */
     column-gap: clamp(4.25rem, 8% + 2vw, 6.25rem);
   }
+  #cs-footer-266 .cs-bottom {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    /* 48px - 64px */
+    margin: clamp(3rem, 7vw, 4rem) auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
   #cs-footer-266 .cs-logo-group {
     /* takes up all the space, lets the other ul's wrap below it */
     width: 100%;
@@ -1262,6 +1275,60 @@ html {
   #cs-footer-266 .cs-social-img {
     height: 0.8125rem;
     width: auto;
+    display: block;
+  }
+  #cs-footer-266 .cs-credit,
+  #cs-footer-266 .cs-bottom-link,
+  #cs-footer-266 .cs-credit-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s;
+  }
+  #cs-footer-266 .cs-credit {
+    width: 100%;
+  }
+  #cs-footer-266 .cs-credit-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: inline-block;
+    position: relative;
+  }
+  #cs-footer-266 .cs-credit-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-266 .cs-bottom-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cs-footer-266 .cs-bottom-link {
+    display: flex;
+    align-items: center;
+  }
+  #cs-footer-266 .cs-bottom-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-266 .cs-bottom-link:last-of-type:before {
+    /* separator */
+    content: "";
+    width: 1px;
+    height: 0.875rem;
+    margin: 0 0.75rem;
+    background: currentColor;
+    opacity: 1;
     display: block;
   }
 }
